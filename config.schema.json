@@ -1,8 +1,7 @@
 {
   "pluginAlias": "DmiPlatform",
   "pluginType": "platform",
-  "headerDisplay": "Homebridge DMI",
-  "footerDisplay": "See the readme [here](https://www.npmjs.com/package/homebridge-dmi)",
+  "footerDisplay": "This plugin for Homebridge adds meteorological observation temperature and humidity data from DMI owned stations located in Denmark and Greenland and exposes them as a thermometer / hygrometer. See the readme [here](https://www.npmjs.com/package/homebridge-dmi) on how to configure the plugin",
   "singular": true,
   "schema": {
     "type": "object",
@@ -15,23 +14,23 @@
         "default": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx"
       },
       "stations": {
-        "title": "Stations",
-        "description": "See readme on how to obtain stationsid(s) and names",
         "type": "array",
-        "required": true,
         "items": {
-          "stationname": {
-            "title": "Stationname",
-            "description": "Name of the station",
-            "type": "string",
-            "required": true,
-            "default": "Landbohøjskolen"
-          },
-          "stationid": {
-            "title": "Stationid",
-            "type": "number",
-            "required": true,
-            "default": "06186"
+          "type" : "object",
+          "properties" : {
+            "stationname": {
+              "title": "Stationname",
+              "description": "Name of the station",
+              "type": "string",
+              "required": true,
+              "default": "Landbohøjskolen"
+            },
+            "stationid": {
+              "title": "Stationid",
+              "type": "string",
+              "required": true,
+              "default": "06186"
+            }
           }
         }
       }

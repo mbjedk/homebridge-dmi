@@ -1,6 +1,6 @@
 # Homebridge DMI
 
-This plugin for [Homebridge](https://github.com/nfarina/homebridge) adds meteorological observation, e.g. wind, temperature, and precipitation data, from DMI owned stations located in Denmark and Greenland and exposes them as a thermometer / hygrometer. This plugin is not affiliated with DMI and is for testing-purposes only.
+This plugin for [Homebridge](https://github.com/nfarina/homebridge) adds meteorological observation: temperature and humidity data data from DMI owned stations located in Denmark and Greenland and exposes them in Homekit. This plugin is not affiliated with DMI and is made for testing-purposes only.
 
 ## Requirements:
 
