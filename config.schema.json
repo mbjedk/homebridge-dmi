@@ -1,15 +1,39 @@
 {
   "pluginAlias": "DmiPlatform",
   "pluginType": "platform",
+  "headerDisplay": "Homebridge DMI",
+  "footerDisplay": "See the readme [here](https://www.npmjs.com/package/homebridge-dmi)",
   "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "apikey": {
+        "title": "API-key",
+        "description": "See readme on how to obtain DMI met-Obs API-key",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx"
+      },
+      "stations": {
+        "title": "Stations",
+        "description": "See readme on how to obtain stationsid(s) and names",
+        "type": "array",
+        "required": true,
+        "items": {
+          "stationname": {
+            "title": "Stationname",
+            "description": "Name of the station",
+            "type": "string",
+            "required": true,
+            "default": "Landbohøjskolen"
+          },
+          "stationid": {
+            "title": "Stationid",
+            "type": "number",
+            "required": true,
+            "default": "06186"
+          }
+        }
       }
     }
   }
